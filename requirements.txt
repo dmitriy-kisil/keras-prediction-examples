@@ -1,0 +1,12 @@
+django==3.0
+djangorestframework==3.10.3
+flask==1.1.1
+gevent==1.4.0
+requests==2.22.0
+tensorflow==2.0.0
+numpy==1.17.4
+pillow==6.2.1
+sanic==19.9.0
+tornado==6.0.3
+pyramid==1.10.4
+aiohttp==3.6.2
