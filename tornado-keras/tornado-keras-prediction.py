@@ -11,8 +11,6 @@ from tornado.ioloop import IOLoop
 import json
 import io
 
-items = []
-
 model = None
 
 def load_model():
@@ -37,7 +35,7 @@ def prepare_image(image, target):
     return image
 
 
-class TodoItem(RequestHandler):
+class Predict(RequestHandler):
     def post(self):
         # items.append(json.loads(self.request.body))
         # self.write({'message': 'new item added'})
@@ -73,7 +71,7 @@ class TodoItem(RequestHandler):
 
 def make_app():
     urls = [
-        ("/predict/", TodoItem),
+        ("/predict/", Predict),
     ]
     return Application(urls, debug=True)
 

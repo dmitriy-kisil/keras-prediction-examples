@@ -72,4 +72,5 @@ if __name__ == "__main__":
    print(("* Loading Keras model and Flask starting server..."
       "please wait until server has fully started"))
    load_model()
+   # Add threaded=False if you want to use keras instead of tensorflow.keras
    app.run(host='0.0.0.0', port='8000', threaded=False)

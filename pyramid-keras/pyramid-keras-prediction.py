@@ -37,8 +37,7 @@ def prepare_image(image, target):
     return image
 
 
-@view_config(renderer='json')
-def hello_world(request):
+def predict(request):
     # initialize the data dictionary that will be returned from the
     # view
     data = {"success": False}
@@ -75,7 +74,7 @@ if __name__ == '__main__':
     load_model()
     with Configurator() as config:
         config.add_route('predict', '/predict/')
-        config.add_view(hello_world, route_name='predict', renderer='json')
+        config.add_view(predict, route_name='predict', renderer='json')
         app = config.make_wsgi_app()
     server = make_server('0.0.0.0', 8000, app)
     print("Pyramid is up!")
