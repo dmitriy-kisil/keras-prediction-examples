@@ -1,5 +1,5 @@
 django==3.0
-djangorestframework==3.10.3
+djangorestframework==3.11.2
 flask==1.1.1
 gevent==1.4.0
 requests==2.22.0
