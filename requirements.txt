@@ -1,4 +1,4 @@
-django==3.0
+django==3.0.14
 djangorestframework==3.10.3
 flask==1.1.1
 gevent==1.4.0
