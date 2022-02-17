@@ -6,7 +6,7 @@ requests==2.22.0
 tensorflow==2.0.0
 numpy==1.17.4
 pillow==6.2.1
-sanic==19.9.0
+sanic==20.12.6
 tornado==6.0.3
 pyramid==1.10.4
 aiohttp==3.6.2
